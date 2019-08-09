@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        let paragraph = <p key="11">Esto es una descripción</p>
+        let titulo=React.createElement('h1',{id:"title",key:23},"Binvenido a react" );
+        let subtitulo=React.createElement('h3',{id:"subtitle",key:12},"Hola que pex" );
+        let lista=[
+            React.createElement('li',{id:"",key:1},"listilla"),
+            React.createElement('li',{id:"",key:2},"listilla"),
+            React.createElement('li',{id:"",key:3},"listilla"),
+            React.createElement('li',{id:"",key:4},"listilla"),
+            React.createElement('li',{id:"",key:5},"listilla"),
+            React.createElement('li',{id:"",key:6},"listilla"),
+        ];
+        let listaCont=React.createElement('ul',{id:"listaCont",key:10},lista);
+        ReactDOM.render([titulo, subtitulo, lista, paragraph], document.getElementById('root'));
+    </script>
+</body>
+</html>
